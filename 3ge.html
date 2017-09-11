@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>	
+	<!-- <script>
+		jzt(5)
+		function jzt(t){
+			for(var i=1;i<=t;i++){
+				for(var j=1;j<=t-i;j++){
+					document.write('-')
+				}
+				for(var j=1;j<=2*i-1;j++){
+					document.write('*')
+				}
+				document.write('<br/>')
+			}
+		}
+	</script> -->
+	<!-- <script>
+		//金字塔			i			z 				j		
+		//-----*			1			5-				1*		2i-1
+		//----***			2			4-				3*		2i-1
+		//---*****			3			3-				5*		2i-1
+		//--*******			4			2-				7*		2i-1
+		//-*********		5			1-				9*		2i-1
+		//***********		6			0-				11*		2i-1
+		/*jzt(1000)
+		function jzt(t){
+			for(var i=1;i<=t;i++){
+				for(var z=1;z<=t-i;z++){
+					document.write('-')
+				}
+				for(var j=1;j<=2*i-1;j++){
+					document.write('*')
+				}
+				document.write('<br/>')
+			}
+		}*/
+	</script> -->
+<!-- 	<script>
+		table(4,5)
+		function table(rows,cols){
+		var table='<table border=1 cellspacing=0>';
+			for(var i=1;i<=rows;i++){
+				table=table+'<tr>'
+					for(var j=1;j<=cols;j++){
+						table=table+'<td>'+j+'*'+i+'='+(i*j)+'</td>'
+					}
+				table=table+'</tr>'	
+			}
+		document.write(table)
+		}
+	</script> -->
+	<!-- <script>
+		//任意行任意列
+		table(4,5)
+		function table(rows,cols){
+			var table='<table border=1 cellspacing=0>';
+				for(var i=1;i<=rows;i++){
+					table=table+'<tr>'
+						for(var j=1;j<=cols;j++){
+							table=table+'<td>'+j+'*'+i+'='+(i*j)+'</td>'
+						}
+					table=table+'</tr>'
+				}
+		document.write(table)
+		}
+	</script> -->
+<!-- 	<script>
+		fbnq(100)
+		function fbnq(o){
+		var i=0;j=1;
+		for(var k=1;k<=o;){
+			document.write(k+'&nbsp')
+			k=i+j;
+			i=j;
+			j=k;
+			}
+		}
+	</script> -->
+<!-- 	<script>
+		//斐波那契
+		//    a b c
+		//  a b c
+		//a b c 
+		//1,2,3,5,8,13,21,34,55,89
+		fbnq(100)
+		function fbnq(d){
+			var a=0,b=1;
+			for(var c=1;c<=d;){
+				document.write(c+'&nbsp')
+				c=a+b;
+				a=b;
+				b=c;
+			}
+		}
+	</script> -->
+	<script>
+	jzt(9)
+		function jzt(t){
+			for(var i=1;i<=t;i++){
+				for(var z=1;z<=t-i;z++){
+					document.write('-');
+				}
+				for(var j=1;j<=2*i-1;j++){
+					document.write('*');
+				}
+			document.write('<br/>');
+			}
+		}
+	</script>
+	<script>
+		fbnq(200)
+		function fbnq(d){
+			var a=0,b=1;
+			for(var c=1;c<=d;){
+				document.write(c+'&nbsp')
+				c=a+b;
+				a=b;
+				b=c;
+			}
+		}
+	</script>
+	<script>
+		table(4,5)
+		function table(rows,cols){
+			var table='<table border=1 cellspacing=0>';
+				for(var i=1;i<=rows;i++){
+					table=table+'<tr>'
+						for(var j=1;j<=cols;j++){
+							table=table+'<td>'+j+'*'+i+'='+(i*j)+'</td>'
+						}
+					table=table+'</tr>'
+				}
+		document.write(table)
+		}
+	</script>
+</body>
+</html>
